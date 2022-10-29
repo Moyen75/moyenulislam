@@ -557,11 +557,83 @@ main {
 }
 
 #projects .all-projects {
-    margin-top: 25px;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
 }
 
-#projects .all-projects p {
-    color: #7ccae7;
+#projects h1 {
+    text-align: center;
+}
+
+#projects .all-projects .project {
+    max-width: 460px;
+    border: 1px solid #7ccae7;
+    overflow: hidden;
+    min-height: 400px;
+    position: relative;
+    transition: all 1s;
+}
+
+#projects .all-projects .project img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#projects .all-projects .project .description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    bottom: -400px;
+    background-color: #7ccbe7f3;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    transition: all 0.5s;
+}
+
+#projects .all-projects .project:hover .description {
+    bottom: 0;
+    top: 0;
+}
+
+#projects .all-projects .project .description h2 {
+    color: #0C455A;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+#projects .all-projects .project .description p {
+    color: #0C455A;
+    padding: 10px 0;
+    min-height: 150px;
+}
+
+#projects .all-projects .project .description a {
+    text-decoration: none;
+    color: #0C455A;
+    position: relative;
+}
+
+#projects .all-projects .project .description a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: #0C455A;
+    z-index: 9999;
+    transition: all 0.5s;
 }
 
 /* contact section */
@@ -706,6 +778,10 @@ main footer h3 span a {
     }
 
     #about .about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #projects .all-projects {
         grid-template-columns: repeat(1, 1fr);
     }
 
