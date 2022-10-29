@@ -61,7 +61,8 @@ main {
     width: 100%;
     background-color: #12495d;
     max-height: 100vh;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* about */
