@@ -72,6 +72,10 @@ main {
     scrollbar-color: #0C455A #0C455A;
 }
 
+main::-webkit-scrollbar {
+    background-color: #0C455A;
+}
+
 /* about */
 #about {
     display: flex;
