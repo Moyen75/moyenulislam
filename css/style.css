@@ -89,7 +89,7 @@ main::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 15px;
     overflow: hidden;
 }
@@ -165,7 +165,7 @@ main::-webkit-scrollbar {
 
 /* working process */
 #work {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,7 +379,7 @@ main::-webkit-scrollbar {
 
 /* skills */
 #skills {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -429,7 +429,7 @@ main::-webkit-scrollbar {
 
 /* experience section */
 #experience {
-    min-height: 100vh;
+    min-height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -561,7 +561,7 @@ main::-webkit-scrollbar {
 
 /* projects section */
 #projects {
-    min-height: 100vh;
+    min-height: 77vh;
     display: flex;
     justify-content: center;
     align-items: center;
