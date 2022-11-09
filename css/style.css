@@ -585,6 +585,7 @@ main::-webkit-scrollbar {
     min-height: 400px;
     position: relative;
     transition: all 1s;
+    padding: 20px 10px;
 }
 
 #projects .all-projects .project img {
