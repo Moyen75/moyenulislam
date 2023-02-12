@@ -570,7 +570,7 @@ main::-webkit-scrollbar {
 #projects .all-projects {
     margin-top: 45px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
 }
 
@@ -587,31 +587,34 @@ main::-webkit-scrollbar {
     transition: all 1s;
 }
 
-#projects .all-projects .project .mullokoto {
-    height: 250px;
-    background-image: url('../images/mullokoto.com.png');
-    background-position: top;
+#projects .all-projects .project .same {
+    height: 300px;
     overflow: hidden;
     object-fit: cover;
     background-size: 100%;
     transition: all 4s linear;
     position: relative;
+}
+
+#projects .all-projects .project .mullokoto {
+    background-image: url('../images/mullokoto.com.png');
+    background-position: top;
 }
 
 #projects .all-projects .project .connekt-camp {
-    height: 250px;
     background-image: url('../images/connekt.camp.png');
     background-position: top;
-    overflow: hidden;
-    object-fit: cover;
-    background-size: 100%;
-    transition: all 4s linear;
-    position: relative;
+    transition: all 14s linear;
 }
 
-#projects .all-projects .project .mullokoto:hover,
-.connekt-camp:hover {
-    background-position: bottom;
+#projects .all-projects .project .nurii {
+    background-image: url('../images/nurii.co.png');
+    background-position: top;
+    transition: all 14s linear;
+}
+
+div#projects div.all-projects div.project div.description .nurii-link {
+    margin-top: 150px;
 }
 
 div#projects div.all-projects div.project div.description {
@@ -619,11 +622,11 @@ div#projects div.all-projects div.project div.description {
     text-align: center;
     margin: auto;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     padding: 25px;
     transition: all 0.5s;
-    margin-top: 50px;
+    min-height: 222px;
 }
 
 #projects .all-projects .project .description .responsibilities {
@@ -631,13 +634,6 @@ div#projects div.all-projects div.project div.description {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-#projects .all-projects .project .description .responsibilities span {
-    color: #0C455A;
-    padding: 10px 15px;
-    background-color: #1CB6EE;
-    margin: 10px;
 }
 
 #projects .all-projects .project .description h2 {
@@ -650,6 +646,7 @@ div#projects div.all-projects div.project div.description {
 #projects .all-projects .project .description p {
     color: #0C455A;
     padding: 10px 0;
+    text-align: justify;
     /* min-height: 150px; */
 }
 
