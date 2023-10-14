@@ -588,7 +588,7 @@ main::-webkit-scrollbar {
 }
 
 #projects .all-projects .project .same {
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     object-fit: cover;
     background-size: 100%;
@@ -596,9 +596,22 @@ main::-webkit-scrollbar {
     position: relative;
 }
 
+#projects .all-projects .project .heyluna {
+    background-image: url('../images/heyluna.png');
+    background-position: top;
+    transition: all 14s linear;
+}
+
+#projects .all-projects .project .scribbletoart {
+    background-image: url('../images/scribbletoart.png');
+    background-position: top;
+    transition: all 14s linear;
+}
+
 #projects .all-projects .project .mullokoto {
     background-image: url('../images/mullokoto.com.png');
     background-position: top;
+    transition: all 14s linear;
 }
 
 #projects .all-projects .project .connekt-camp {
@@ -617,6 +630,7 @@ div#projects div.all-projects div.project div.description .nurii-link {
     margin-top: 150px;
 }
 
+
 div#projects div.all-projects div.project div.description {
     background-color: #7ccbe7f3;
     text-align: center;
@@ -626,7 +640,31 @@ div#projects div.all-projects div.project div.description {
     justify-content: center;
     padding: 25px;
     transition: all 0.5s;
-    min-height: 222px;
+    min-height: 250px;
+    position: relative;
+}
+
+div#projects div.all-projects div.project div.description a {
+    text-decoration: none;
+    color: #0e1f27;
+    /* animation: colorChange 2s infinite alternate; */
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: green;
+    }
 }
 
 #projects .all-projects .project .description .responsibilities {
@@ -650,13 +688,13 @@ div#projects div.all-projects div.project div.description {
     /* min-height: 150px; */
 }
 
-#projects .all-projects .project .description a {
+/* #projects .all-projects .project .description a {
     text-decoration: none;
     color: #0C455A;
     position: relative;
-}
+} */
 
-#projects .all-projects .project .description a::after {
+/* #projects .all-projects .project .description a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -666,7 +704,7 @@ div#projects div.all-projects div.project div.description {
     background-color: #0C455A;
     z-index: 9999;
     transition: all 0.5s;
-}
+} */
 
 /* contact section */
 #contact {
